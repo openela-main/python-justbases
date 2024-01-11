@@ -1,10 +1,10 @@
 %global srcname justbases
 Name:       python-%{srcname}
-Version:    0.15
-Release:    6%{?dist}
+Version:    0.15.2
+Release:    1%{?dist}
 Summary:    A small library for precise conversion between arbitrary bases
 
-License:    LGPLv2+
+License:    LGPL-2.1-or-later
 URL:        http://pypi.python.org/pypi/justbases
 Source0:    https://pypi.io/packages/source/j/%{srcname}/%{srcname}-%{version}.tar.gz
 
@@ -42,6 +42,10 @@ rm -rf justbases.egg-info
 %{python3_sitelib}/justbases-%{version}-*.egg-info
 
 %changelog
+* Tue May 16 2023 Bryan Gurney <bgurney@redhat.com> - 0.15.2-1
+- Update to 0.15.2
+- Resolves: rhbz#2203858
+
 * Tue Aug 10 2021 Mohan Boddu <mboddu@redhat.com> - 0.15-6
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
